@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: In the create action, Toys was changed to Toy to correctly reference the Toy model.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: In the update action, render json: toy was added to return the updated toy as JSON after it was updated.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: In the destroy action, render json: toy was removed since the toy is being deleted and doesn't need to be rendered.
